@@ -159,7 +159,7 @@ public class CreateAndShipOrderTest {
         // do NOT ask for mobile number or OTP again.
         String currentUrl = safeGetUrl();
 
-        if (currentUrl.contains("app.losung360.com")) {
+        if (currentUrl.startsWith("https://app.losung360.com/"))  {
             System.out.println("Already logged in to Losung360.");
             System.out.println("Skipping mobile number and OTP.");
             System.out.println("Dashboard URL: " + currentUrl);
@@ -270,7 +270,7 @@ public class CreateAndShipOrderTest {
         System.out.println("CURRENT URL: " + driver.getCurrentUrl());
         System.out.println("PAGE TITLE: " + driver.getTitle());
         System.out.println("PAGE SOURCE LENGTH: " + driver.getPageSource().length());
-        
+
         WebElement addOrderButton = wait.until(
                 ExpectedConditions.elementToBeClickable(
                         By.xpath("//button[normalize-space()='Add an order']")));
