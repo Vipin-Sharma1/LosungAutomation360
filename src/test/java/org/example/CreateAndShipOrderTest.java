@@ -267,7 +267,10 @@ public class CreateAndShipOrderTest {
     // =========================================================
 
     public void openAddOrderPage() {
-
+        System.out.println("CURRENT URL: " + driver.getCurrentUrl());
+        System.out.println("PAGE TITLE: " + driver.getTitle());
+        System.out.println("PAGE SOURCE LENGTH: " + driver.getPageSource().length());
+        
         WebElement addOrderButton = wait.until(
                 ExpectedConditions.elementToBeClickable(
                         By.xpath("//button[normalize-space()='Add an order']")));
