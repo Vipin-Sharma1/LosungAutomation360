@@ -22,7 +22,7 @@ jobs:
           cache: maven
 
       - name: Run Selenium tests
-      - env:
-      - LOSUNG_LOGIN_MOBILE: ${{ secrets.LOSUNG_LOGIN_MOBILE }}
-      - LOSUNG_OTP: ${{ secrets.LOSUNG_OTP }}
-      - run: mvn clean test
+        env:
+          LOSUNG_LOGIN_MOBILE: ${{ secrets.LOSUNG_LOGIN_MOBILE }}
+          LOSUNG_OTP: ${{ secrets.LOSUNG_OTP }}
+        run: mvn clean test
