@@ -39,7 +39,7 @@ public class CreateAndShipOrderTest_SLOW_DEMO {
     String loginMobile = "8824029491";
 
     String customerMobile = "9876543210";
-    String customerName = "Automation Test User";
+    String customerName = "Madhup Agarwal ";
     String customerAddress = "Jaipur Rajasthan";
     String pincode = "302001";
     String city = "Jaipur";

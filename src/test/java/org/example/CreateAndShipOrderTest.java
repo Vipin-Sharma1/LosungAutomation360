@@ -29,7 +29,7 @@ public class CreateAndShipOrderTest {
     String loginMobile = System.getenv().getOrDefault("LOSUNG_LOGIN_MOBILE", "8824029491");
 
     String customerMobile = "9876543210";
-    String customerName = "Fully Automation Using Vipin";
+    String customerName = "Madhup agarwal";
     String customerAddress = "Jaipur Rajasthan";
     String pincode = "302001";
     String city = "Jaipur";
