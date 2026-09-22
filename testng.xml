@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Losung Automation Suite" verbose="1">
+    <test name="Losung End-to-End Tests">
+        <classes>
+            <class name="org.example.LoginTest"/>
+            <class name="org.example.CreateOrderTest"/>
+            <class name="org.example.ShipOrderTest"/>
+        </classes>
+    </test>
+</suite>
